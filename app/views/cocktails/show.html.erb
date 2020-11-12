@@ -3,10 +3,11 @@
 <% @cocktail.doses.each do |dose| %>
 <%= dose.description %>
 <%= dose.ingredient.name %>
-<%= link_to "Delete",
-    dose_path(dose.id),
+<%= link_to dose_path(dose.id),
     method: :delete,
-    data: { confirm: "Are you sure?" } %>
+    data: { confirm: "Are you sure?" } do %>
+   <i class="fas fa-trash-alt"></i> 
+   <% end %>
 <% end %>
 </p>
 
