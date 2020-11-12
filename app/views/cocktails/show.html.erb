@@ -1,0 +1,22 @@
+<h1>Your cocktail</h1>
+<p>
+<% @cocktail.doses.each do |dose| %>
+<%= dose.description %>
+<%= dose.ingredient.name %>
+<%= link_to "Delete",
+    dose_path(dose.id),
+    method: :delete,
+    data: { confirm: "Are you sure?" } %>
+<% end %>
+</p>
+
+<p>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.button :submit %>
+<% end %>
+</p>
+
+
+<%= link_to "Back", cocktails_path %>
