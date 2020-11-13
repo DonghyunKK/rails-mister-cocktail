@@ -1,5 +1,6 @@
 <h1>Your cocktail</h1>
 <p>
+<%= @cocktail.name %>
 <% @cocktail.doses.each do |dose| %>
 <%= dose.description %>
 <%= dose.ingredient.name %>
@@ -11,6 +12,8 @@
 <% end %>
 </p>
 
+<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+
 <p>
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
@@ -18,6 +21,8 @@
   <%= f.button :submit %>
 <% end %>
 </p>
+
+
 
 
 <%= link_to "Back", cocktails_path %>
