@@ -13,3 +13,10 @@
 @import "pages/index";
 @import "cocktails";
 @import "doses";
+
+
+.background_pic {
+  background-image: url("../../images/background1.jpg");
+  background-size: cover;
+  background-position: center;
+}
