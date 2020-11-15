@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+// .background-blur {
+//   font-size: 30px;
+//   display: flex;
+//   height: 100vh;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+// }
+
+.background {
+  background-image: url("https://images.pexels.com/photos/699622/wine-glasses-drink-alcohol-699622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  // background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}

@@ -21,6 +21,7 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
+
 # open("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list") do |ingredients|
 #   data = []
 #   ingredients.read.each_line do |ingredient|
